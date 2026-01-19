@@ -401,6 +401,51 @@ header {
 }
 
 
+/* Footer related Style */
+footer {
+    background: url("../assets/footer-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+}
+
+.footer-items {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 3rem;
+    color: white;
+}
+
+.footer-social {
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+}
+
+.footer-social,
+.f-sc-part-1,
+.f-sc-part-2 {
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.f-sc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.copyright {
+    color: #fafafa60;
+}
+
 @media screen and (max-width:576px) {
     .navbar {
         padding: 18px 20px;
@@ -513,6 +558,7 @@ header {
     .episode-card-title {
         font-size: 1.25rem;
     }
+
     .host-main {
         padding-bottom: 0;
     }
@@ -531,6 +577,29 @@ header {
     .host-social {
         justify-content: center;
     }
+
+    .footer-title {
+        font-size: 2.5rem;
+    }
+
+    .footer-social {
+        flex-direction: column;
+    }
+
+    .footer-social,
+    .f-sc-part-1,
+    .f-sc-part-2
+    {
+        gap: 16px;
+        padding:0;
+    }
+    .f-sc-part-1 {
+        padding-top: 24px;
+    }
+    .f-sc-part-2 {
+        padding-bottom: 24px;
+    }
+
 }
 
 
@@ -555,6 +624,7 @@ header {
     .host-main {
         padding-bottom: 0;
     }
+
     .host {
         padding: 20px 20px 40px 20px;
 
