@@ -25,6 +25,16 @@ html {
     box-sizing: border-box;
 }
 
+@keyframes banner-animation {
+    from {
+        box-shadow: 0 3px 250px 0 #FB09B4;
+    }
+
+    to{
+        box-shadow: 0 3px 150px 0 #9100F8;
+    }
+
+}
 
 .display-flex {
     display: flex;
@@ -137,6 +147,8 @@ header {
     background: var(--linear-grad);
     border: 8px solid #2A186C;
     position: relative;
+
+    animation: banner-animation 0.3s ease-in-out 0.1s infinite alternate;
 
 }
 
