@@ -24,21 +24,27 @@ html {
     box-sizing: border-box;
 }
 
+
 .display-flex {
     display: flex;
 }
 
-body>section,
 .navbar {
     max-width: 1200px;
     margin: 0 auto;
+}
 
+.section-shape {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 120px;
 }
 
 .section-heading {
     text-align: center;
     font-weight: bold;
     font-size: 3rem;
+    color: white;
 }
 
 .btn {
@@ -48,6 +54,18 @@ body>section,
     border-radius: 1000px;
     padding: 12.5px 16px;
     background: linear-gradient(36deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+}
+
+.btn:hover,
+.nav-subscribe-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 3px 27px 0 #FB09B4;
+}
+.banner-subscribe-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 3px 27px 0 #00FF88;
 }
 
 #wave {
@@ -84,13 +102,16 @@ header {
 
 .nav-menu a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.90);
     gap: 32px;
 }
 
 .humburger-menu-icon {
     display: none;
+    cursor: pointer;
 }
+
+
 
 
 
@@ -117,9 +138,6 @@ header {
 
 }
 
-.banner-img-container img {
-}
-
 .new-badge {
     position: absolute;
     top: 0;
@@ -144,7 +162,7 @@ header {
 }
 
 .banner-text {
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 24px;
 }
 
@@ -163,6 +181,48 @@ header {
     padding: 12px 20px;
 }
 
+/* About the POdcast Section */
+.podcast-container {
+    background-color: #1A0B2E;
+    text-align: center;
+}
+
+.podcast {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.podcast_u1 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.podcast-text {
+    margin-top: 16px;
+    color: rgba(255, 255, 255, 0.80);
+    line-height: 20px;
+}
+
+.podcast-card-container {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.pod-card-number {
+    color: var(--color00F);
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 8px;
+}
+
+.pod-card-text {
+    color: rgba(255, 255, 255, 0.80);
+
+}
+
 
 
 @media screen and (max-width:576px) {
@@ -173,22 +233,32 @@ header {
     .nav-title {
         font-size: 1.7rem;
     }
+
     .nav-menu,
     .nav-subscribe-btn {
         display: none;
+    }
+
+    .humburger-menu-icon:hover {
+        font-size: 30px;
+        color: #FB09B4;
     }
 
     .humburger-menu-icon {
         display: block;
         color: white;
         font-size: 24px;
+    }
 
+    .banner {
+        padding: 40px 20px;
     }
 
     .banner-img-container {
         height: 200px;
         width: 200px;
     }
+
     .banner-img-container img {
         height: 70px;
         width: 46.67px;
@@ -196,6 +266,24 @@ header {
 
     .banner-title {
         font-size: 2.625rem;
+    }
+
+    .podcast-title {
+        font-size: 2rem;
+    }
+
+    .podcast {
+        padding: 40px 20px;
+    }
+
+    .podcast-card-container {
+        padding: 40px 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .pod-card-number {
+        font-size: 2.5rem;
     }
 }
 
