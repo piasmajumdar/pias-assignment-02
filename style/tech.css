@@ -68,7 +68,7 @@ header {
 .navbar {
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
+    padding: 24px 10px;
 
 }
 
@@ -88,25 +88,36 @@ header {
     gap: 32px;
 }
 
+.humburger-menu-icon {
+    display: none;
+}
+
+
 
 /* Banner Related Style  */
 .banner {
     background-image: url("../assets/hero-bg.png");
+    background-position-x: center;
     background-size: cover;
     text-align: center;
     padding: 101px 0;
 }
 
 .banner-img-container {
-    max-width: 350px;
-    max-height: 350px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    padding: 70px 75px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     background: var(--linear-grad);
     border: 8px solid #2A186C;
     position: relative;
 
+}
+
+.banner-img-container img {
 }
 
 .new-badge {
@@ -143,11 +154,55 @@ header {
     margin-right: 8px;
 }
 
-.subscribe-btn {
+.banner-subscribe-btn {
     color: var(--color00F);
     font-weight: 600;
     border: 1px solid var(--color00F);
     border-radius: 1000px;
     background-color: transparent;
     padding: 12px 20px;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .navbar {
+        padding: 18px 20px;
+    }
+
+    .nav-title {
+        font-size: 1.7rem;
+    }
+    .nav-menu,
+    .nav-subscribe-btn {
+        display: none;
+    }
+
+    .humburger-menu-icon {
+        display: block;
+        color: white;
+        font-size: 24px;
+
+    }
+
+    .banner-img-container {
+        height: 200px;
+        width: 200px;
+    }
+    .banner-img-container img {
+        height: 70px;
+        width: 46.67px;
+    }
+
+    .banner-title {
+        font-size: 2.625rem;
+    }
+}
+
+
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .nav-menu {
+        gap: 15px;
+    }
 }
