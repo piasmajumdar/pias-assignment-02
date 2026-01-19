@@ -343,6 +343,7 @@ header {
     font-weight: bold;
     padding-bottom: 12px;
 }
+
 .episode-card-text {
     color: rgba(255, 255, 255, 0.60);
     line-height: 24px;
@@ -352,6 +353,51 @@ header {
 .episode-card-time {
     color: var(--color00F);
     font-weight: 600;
+}
+
+/* Meet The Host Styles */
+.host-main {
+    background-color: var(--text-color-1A0B);
+    padding-bottom: 120px;
+}
+
+.host-container {
+    background-color: rgba(53, 17, 101, 0.4);
+    margin-top: 40px;
+    padding: 40px;
+    gap: 24px;
+    border: none;
+    border-radius: 40px;
+}
+
+.host-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.host-bio {
+    color: rgba(255, 255, 255, 0.60);
+    line-height: 24px;
+    padding: 16px 0;
+}
+
+.host-social {
+    gap: 8px;
+}
+
+.icon-round {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+
+    display: flex;
+}
+
+.icon-round img {
+    width: 100%;
 }
 
 
@@ -406,8 +452,13 @@ header {
 
     .podcast-title,
     .why-choose-title,
-    .f-episode-title {
+    .f-episode-title,
+    .host-title {
         font-size: 2rem;
+    }
+
+    .host-name {
+        font-size: 1.5rem;
     }
 
     .podcast-card-container {
@@ -426,7 +477,8 @@ header {
         margin-top: 16px;
     }
 
-    .cbox-insider {
+    .cbox-insider,
+    .host-container {
         padding: 24px;
     }
 
@@ -439,10 +491,20 @@ header {
     }
 
     .episode-card-container {
-        flex-direction: column;
         gap: 24px;
+    }
+
+    .episode-card-container,
+    .host-container {
+        flex-direction: column;
         margin-top: 24px;
     }
+
+    .host-container {
+        gap: 16px;
+        text-align: center;
+    }
+
 
     .episode-card-info {
         padding: 16px;
@@ -450,6 +512,24 @@ header {
 
     .episode-card-title {
         font-size: 1.25rem;
+    }
+    .host-main {
+        padding-bottom: 0;
+    }
+
+    .host {
+        padding: 20px 20px 40px 20px;
+
+    }
+
+    .host-img {
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    .host-social {
+        justify-content: center;
     }
 }
 
@@ -471,5 +551,14 @@ header {
     .episode-card-info {
         padding: 20px;
     }
+
+    .host-main {
+        padding-bottom: 0;
+    }
+    .host {
+        padding: 20px 20px 40px 20px;
+
+    }
+
 
 }
