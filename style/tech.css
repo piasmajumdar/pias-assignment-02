@@ -35,6 +35,16 @@ html {
     }
 
 }
+@keyframes why-choose-animation {
+    from {
+        background: linear-gradient(45deg, #f7e83f3a 0%, #fb09b237 20%, #9100f848 40%);
+    }
+
+    to {
+        box-shadow: 0 3px 50px 0 #9100F8;
+    }
+
+}
 
 .display-flex {
     display: flex;
@@ -283,20 +293,26 @@ header {
 
 .cbox-1 {
     grid-row: span 2;
+    animation: why-choose-animation 2s ease-in-out 2s infinite normal ;
 }
 
 .cbox-2 {
     grid-column: span 2;
+    animation: why-choose-animation 2s ease-in-out 4s infinite normal ;
 }
 
 .cbox-3 {
     grid-column: span 2;
+    animation: why-choose-animation 2s ease-in-out 6s infinite normal ;
 }
 
 .cbox-4 {
     grid-column: span 2;
+    animation: why-choose-animation 2s ease-in-out 8s infinite normal ;
 }
-
+.cbox-5 {
+    animation: why-choose-animation 2s ease-in-out 10s infinite normal ;
+}
 .c-box-title {
     color: white;
     font-size: 1.5rem;
