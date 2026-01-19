@@ -14,6 +14,7 @@ html {
     --color412: #412567;
     --text-color-1A0B: #1A0B2E;
     --color00F: #00FF88;
+    --color230E: #230E3D;
     --linear-grad: linear-gradient(45deg, #F7E93F 15%, #FB09B4 50%, #9100F8 100%);
 }
 
@@ -57,11 +58,12 @@ html {
 }
 
 .btn:hover,
-.nav-subscribe-btn:hover{
+.nav-subscribe-btn:hover {
     transform: scale(1.1);
     cursor: pointer;
     box-shadow: 0 3px 27px 0 #FB09B4;
 }
+
 .banner-subscribe-btn:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -222,6 +224,76 @@ header {
     color: rgba(255, 255, 255, 0.80);
 
 }
+
+
+/* Why choose Techwave reated style */
+
+.why-choose-techwave {
+    background-color: var(--color230E);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.why-choose {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fa-bolt {
+    font-size: 3rem;
+    background: var(--linear-grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.choose-container {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+.cbox {
+    background-color: rgba(53, 17, 101, 0.4);
+    border: none;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+.cbox-insider {
+    padding: 40px;
+}
+
+.cbox-1 {
+    grid-row: span 2;
+}
+
+.cbox-2 {
+    grid-column: span 2;
+}
+
+.cbox-3 {
+    grid-column: span 2;
+}
+
+.cbox-4 {
+    grid-column: span 2;
+}
+
+.c-box-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 16px 0;
+}
+.c-box-text {
+    color: rgba(255, 255, 255, 0.60);
+    line-height: 24px;
+}
+
 
 
 
