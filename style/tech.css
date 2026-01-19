@@ -30,7 +30,7 @@ html {
         box-shadow: 0 3px 250px 0 #FB09B4;
     }
 
-    to{
+    to {
         box-shadow: 0 3px 150px 0 #9100F8;
     }
 
@@ -309,6 +309,50 @@ header {
 }
 
 
+/* Featured Episodes Related Style */
+.f-episode-main {
+    background-color: var(--text-color-1A0B);
+}
+
+.episode-card-container {
+    margin-top: 40px;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.episode-card {
+    background-color: #250D44;
+    border: none;
+    border-radius: 24px;
+}
+
+.episode-card iframe {
+    border: none;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+
+}
+
+.episode-card-info {
+    padding: 24px;
+}
+
+.episode-card-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+.episode-card-text {
+    color: rgba(255, 255, 255, 0.60);
+    line-height: 24px;
+    padding-bottom: 12px;
+}
+
+.episode-card-time {
+    color: var(--color00F);
+    font-weight: 600;
+}
 
 
 @media screen and (max-width:576px) {
@@ -337,7 +381,10 @@ header {
     }
 
     .banner,
-    .why-choose-techwave {
+    .why-choose-techwave,
+    .podcast,
+    .podcast-card-container,
+    .f-episode {
         padding: 40px 20px;
     }
 
@@ -356,17 +403,14 @@ header {
         font-size: 2.625rem;
     }
 
+
     .podcast-title,
-    .why-choose-title {
+    .why-choose-title,
+    .f-episode-title {
         font-size: 2rem;
     }
 
-    .podcast {
-        padding: 40px 20px;
-    }
-
     .podcast-card-container {
-        padding: 40px 20px;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
@@ -379,7 +423,6 @@ header {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 16px;
-
         margin-top: 16px;
     }
 
@@ -395,6 +438,19 @@ header {
         grid-column: span 1;
     }
 
+    .episode-card-container {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 24px;
+    }
+
+    .episode-card-info {
+        padding: 16px;
+    }
+
+    .episode-card-title {
+        font-size: 1.25rem;
+    }
 
 }
 
@@ -404,4 +460,17 @@ header {
     .nav-menu {
         gap: 15px;
     }
+
+    .banner,
+    .why-choose-techwave,
+    .f-episode,
+    .podcast,
+    .podcast-card-container {
+        padding: 30px 20px;
+    }
+
+    .episode-card-info {
+        padding: 20px;
+    }
+
 }
