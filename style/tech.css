@@ -68,7 +68,8 @@ html {
 }
 
 .btn:hover,
-.nav-subscribe-btn:hover {
+.nav-subscribe-btn:hover,
+a:hover {
     transform: scale(1.1);
     cursor: pointer;
     box-shadow: 0 3px 27px 0 #FB09B4;
@@ -421,7 +422,8 @@ footer {
     color: white;
 }
 
-.footer-social {
+.footer-social a{
+    text-decoration: none;
     color: rgba(255, 255, 255, 0.60);
     font-weight: 500;
 }
@@ -435,7 +437,7 @@ footer {
     padding: 32px 0;
 }
 
-.f-sc {
+.f-sc a{
     display: flex;
     justify-content: space-between;
     align-items: center;
