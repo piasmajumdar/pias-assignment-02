@@ -1,13 +1,3 @@
-## 🌟 WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-002 😎
-
----
-
-📅 Deadline For 60 marks: 20th January, 2026 (11:59 pm ⏱️)
-
-📅 Deadline For 50 marks: 21th January, 2026 (11:59 pm ⏱️)
-
-📅 Deadline For 30 marks: Any time after 21th January.
-
 # TechWave - Podcast Website
 
 ## ❓ Common Questions & Answers
@@ -32,7 +22,7 @@
 
 ## 📌 Assignment Requirements
 
-### ✅ Main Requirements (50 Marks)
+### ✅ Main Requirements 
 
 ### Navbar
 
@@ -136,11 +126,4 @@
 - Live site deployed
 - Public GitHub repository
 
----
-
-## 📂 Submission Format
-
-- **GitHub Repository Link**
-- **Live Website Link (GitHub Pages)**
-
----
+--
